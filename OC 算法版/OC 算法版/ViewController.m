@@ -182,7 +182,7 @@
     // Do any additional setup after loading the view.
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.titleArray = @[@"1.最长公共字串",@"2.最长回文字串",@"3.最长上升子串",@"4.最长连续子数组",@"a",@"b",@"c",@"d"];
+    self.titleArray = @[@"1.最长公共字串",@"2.最长回文字串",@"3.最长上升子串",@"4.最长连续子数组",@"a",@"b",@"c",@"d",@"E",@"F"];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.titleArray.count;
@@ -191,6 +191,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"123");
     NSLog(@"456");
+    NSLog(@"789");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if(cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
